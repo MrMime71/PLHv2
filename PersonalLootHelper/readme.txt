@@ -6,4 +6,6 @@ Please Personalize your default Whisper text by typing /plh
 Original PLH has lisence ALL Rights Reserved..
 I just added functionality to original code.
 
+Screenshot of the the frames can be found here: http://imgur.com/a/fDMcC
+
 /coremeeko2
