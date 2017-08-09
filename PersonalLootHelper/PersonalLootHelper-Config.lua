@@ -366,11 +366,11 @@ if typeOfInstancetosendchat == "none" then
 	whisperButton:SetScript("OnClick", function(self) SendChatMessage(arg3, "say", nil )  end)	
 else
 -- Raid finder difficulty is 7 and 17
---		if (difficultychat == 7) or (difficultychat == 17) then
-	      whisperButton:SetScript("OnClick", function(self) SendChatMessage(arg3, "instance_chat", nil )  end)
---		else
+		if (difficultychat == 7) or (difficultychat == 17) then
+	      whisperButton:SetScript("OnClick", function(self) SendChatMessage(arg3, "INSTANCE_CHAT" )  end)
+		else
 		  whisperButton:SetScript("OnClick", function(self) SendChatMessage(arg3, typeOfInstancetosendchat, nil )  end) 
---		end
+		end
 end
 	frame.whisperButton = whisperButton
 
