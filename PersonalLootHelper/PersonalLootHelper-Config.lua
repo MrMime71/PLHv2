@@ -316,8 +316,10 @@ end
 
 --tiny 
 -- trade frame
--- dont need arg 4 and 5 that is the playername
-function PLH_CreateTradeFrame(arg1, arg2, arg3)
+-- dont need arg 5 that is the playername
+-- arg 4 is "announce roll is over " TRADEMETEXT = TRADEMETEXT .. item from core.lua
+function PLH_CreateTradeFrame(arg1, arg2, arg3, arg4)
+local _, typeOfInstancetosendchat, difficultychat, _, _, _, _, _, _ = GetInstanceInfo()
 local frame  = CreateFrame("Frame", "PLHLootFrame", UIParent)
 frame.width  = 500
 frame.height = 100
@@ -355,9 +357,33 @@ closeButton:SetText("CLOSE")
 closeButton:SetScript("OnClick", function(self)	 PlaySound("igMainMenuOption") self:GetParent():Hide() end)
 frame.closeButton = closeButton
 
+--trademe button
+
+local trademeButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
+
+trademeButton:SetPoint("BOTTOM", 0, 10)
+trademeButton:SetHeight(25)
+trademeButton:SetWidth(50)
+trademeButton:SetText("EndRoll")
+if typeOfInstancetosendchat == "none" then
+	trademeButton:SetScript("OnClick", function(self) SendChatMessage(arg4, "say", nil )  end)	
+else
+-- Raid finder difficulty is 7 and 17
+		if (difficultychat == 7) or (difficultychat == 17) then
+	      trademeButton:SetScript("OnClick", function(self) SendChatMessage(arg4, "INSTANCE_CHAT" )  end)
+		else
+		  trademeButton:SetScript("OnClick", function(self) SendChatMessage(arg4, typeOfInstancetosendchat, nil )  end) 
+		end
+end
+	frame.trademeButton = trademeButton
+
+
+
+
+
 -- Announce button
 local whisperButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
-local _, typeOfInstancetosendchat, difficultychat, _, _, _, _, _, _ = GetInstanceInfo()
+
 whisperButton:SetPoint("BOTTOM", 60, 10)
 whisperButton:SetHeight(25)
 whisperButton:SetWidth(50)

@@ -368,6 +368,7 @@ Future enhancement ideas:
 SLASH_PLHelperCommand1 = '/plh'
 
 --tiny start
+local TRADEMETEXT = "Roll finnished! Winner trade me for "
 local LOOTWINDOW_VERTICAL_SPACE = 0
 local TRADEWINDOW_VERTICAL_SPACE = 0
 local TESTITEM = '\124cffa335ee\124Hitem:141570:0:0:0:0:0:0:0:0:0:0\124h[Cainen\'s Preeminent Chestguard]\124h\124r'
@@ -1908,7 +1909,8 @@ local function PerformNotify(fullItemInfo, characterName)
 					    SENDSTRING2 =  item .. ' is not an ilvl upgrade, You can set it for rolls. Others might need it'
 				--		TARGETUNIT = PLH_GetNameWithoutRealm(characterName)
 						PLH_WHISPER_TEXT2 = "Roll for " .. item .. " if you need it!"
-						PLH_CreateTradeFrame(TRADEWINDOW_VERTICAL_SPACE, SENDSTRING2, PLH_WHISPER_TEXT2)
+						TRADEMETEXT = TRADEMETEXT .. item
+						PLH_CreateTradeFrame(TRADEWINDOW_VERTICAL_SPACE, SENDSTRING2, PLH_WHISPER_TEXT2, TRADEMETEXT)
 						TRADEWINDOW_VERTICAL_SPACE = TRADEWINDOW_VERTICAL_SPACE + 100
 							if TRADEWINDOW_VERTICAL_SPACE > 499 then
 								TRADEWINDOW_VERTICAL_SPACE = 0
@@ -2593,7 +2595,8 @@ function SlashCmdList.PLHelperCommand(msg, editbox)
 					    SENDSTRING2 =  item .. ' is not an ilvl upgrade, You can set it for rolls. Others might need it'
 				--		TARGETUNIT = PLH_GetNameWithoutRealm(characterName)
 						PLH_WHISPER_TEXT2 = "Roll for " .. item .. " if you need it!"
-						PLH_CreateTradeFrame(TRADEWINDOW_VERTICAL_SPACE, SENDSTRING2, PLH_WHISPER_TEXT2)
+						TRADEMETEXT = TRADEMETEXT .. item
+						PLH_CreateTradeFrame(TRADEWINDOW_VERTICAL_SPACE, SENDSTRING2, PLH_WHISPER_TEXT2, TRADEMETEXT)
 						TRADEWINDOW_VERTICAL_SPACE = TRADEWINDOW_VERTICAL_SPACE + 100
 							if TRADEWINDOW_VERTICAL_SPACE > 499 then
 								TRADEWINDOW_VERTICAL_SPACE = 0

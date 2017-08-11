@@ -1,6 +1,6 @@
-## Interface: 70200
+## Interface: 70250
 ## Title: Personal Loot Helper
-## Version: 1.27 7.2 v3.7 Fan Updated
+## Version: Based 1.27 7.2.5 v2 Fan Updated
 ## SavedVariables: PLH_NOTIFY_MODE, PLH_INCLUDE_BOE, PLH_MIN_QUALITY, PLH_MIN_ILVL, PLH_DEBUG, PLH_CURRENT_SPEC_ONLY, PLH_CHECK_CHARACTER_LEVEL, PLH_COORDINATE_ROLLS, PLH_NOTIFY_GROUP, PLH_HIGHLIGHT_RAID_FRAMES, PLH_HIGHLIGHT_SIZE, PLH_WHISPER_TEXT, PLH_WHISPER_UPGRADE
 ## Notes: Simplifies trading of personal loot by notifying you when a drop is not an upgrade for the looter, but is an upgrade for you or others in your group.
 ## Author: Madone-Zul'Jin
