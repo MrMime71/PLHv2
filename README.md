@@ -6,4 +6,5 @@ Frames added for self lazyness on Trading and Asking for loot.
 
 PS: change the default whisper sentence to something personal. this can be done with /plh
 
-Screenshot : http://imgur.com/a/fDMcC
+Screenshot : http://imgur.com/a/fDMcC (former version)
+Added "EndRoll" Button to announce roll had ended ad that winner can trade you
