@@ -130,7 +130,7 @@ function PLH_CreateOptionsPanel()
 
 	local WhisperInputLabel = PLH_WhisperInput:CreateFontString(nil, 'ARTWORK', 'GameFontHighlight')
 	WhisperInputLabel:SetPoint('LEFT', PLH_HighlightRaidFramesCheckbox, 'LEFT', 0, -29)
-	WhisperInputLabel:SetText('Enter your custom text (clear to go back to defaults)')
+	WhisperInputLabel:SetText('DISABLED due to requests! >>> Enter your custom text (clear to go back to defaults)')
 -- tiny
 	
 	--[[ Thank you message ]] --
