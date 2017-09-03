@@ -41,7 +41,7 @@
 <p>(Fan Update)</p>
 <p>ALL coding except framed done by the brilliant Madone of Zul'jin. This version is based on v1.32 on 3rd of sept 2017 and updated for WoW 7.3</p>
 <p>Frames added for self lazyness on Trading and Asking for loot.</p>
-<p>Screenshot here: <a href="http://imgur.com/a/GA2dv">http://imgur.com/a/GA2dv</a></p>
+<p>Screenshot here: <a href="http://imgur.com/a/0hoxC">http://imgur.com/a/0hoxC</a></p>
 </article>
   </div>
 
