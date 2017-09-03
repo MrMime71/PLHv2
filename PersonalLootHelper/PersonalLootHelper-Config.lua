@@ -130,7 +130,7 @@ function PLH_CreateOptionsPanel()
 
 	local WhisperInputLabel = PLH_WhisperInput:CreateFontString(nil, 'ARTWORK', 'GameFontHighlight')
 	WhisperInputLabel:SetPoint('LEFT', PLH_HighlightRaidFramesCheckbox, 'LEFT', 0, -29)
-	WhisperInputLabel:SetText('DISABLED due to requests! >>> Enter your custom text (clear to go back to defaults)')
+	WhisperInputLabel:SetText('Enter your custom text (clear to go back to defaults)')
 -- tiny
 	
 	--[[ Thank you message ]] --
@@ -192,7 +192,7 @@ end
 function PLH_CreateLootFrame(arg1, arg2, arg3, arg4, arg5)
 local frame  = CreateFrame("Frame", "PLHLootFrame", UIParent)
 frame.width  = 500
-frame.height = 100
+frame.height = 110
 frame:SetFrameStrata("FULLSCREEN_DIALOG")
 frame:SetSize(frame.width, frame.height)
 frame:SetPoint("CENTER", UIParent, "CENTER", 0, arg1)
@@ -224,21 +224,21 @@ closeButton:SetPoint("BOTTOM", -60, 10)
 closeButton:SetHeight(25)
 closeButton:SetWidth(50)
 closeButton:SetText("CLOSE")
-closeButton:SetScript("OnClick", function(self)	 PlaySound("igMainMenuOption") self:GetParent():Hide() end)
+closeButton:SetScript("OnClick", function(self)	self:GetParent():Hide() end)
 frame.closeButton = closeButton
 
---[[Whisper button
+-- Whisper button
 local whisperButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
-whisperButton:SetPoint("BOTTOM", 0, 10)
+whisperButton:SetPoint("BOTTOM", 60, 10)
 whisperButton:SetHeight(25)
 whisperButton:SetWidth(50)
 whisperButton:SetText("WHISPER")
 whisperButton:SetScript("OnClick", function(self) SendChatMessage(arg3, "WHISPER", nil, arg4)  end)
 frame.whisperButton = whisperButton
-]]--
+--
 -- Target button
     local HSframe = CreateFrame("BUTTON","homeButton", frame, "SecureActionButtonTemplate")
-    HSframe:SetPoint("BOTTOM", 60, 15)
+    HSframe:SetPoint("BOTTOM", 0, 15)
     HSframe:SetSize(42, 16)
     HSframe:EnableMouse(true)
     HSframe:RegisterForClicks("AnyUp")
@@ -269,6 +269,7 @@ messageFrame:SetMaxLines(300)
 frame.messageFrame = messageFrame
 
 messageFrame:AddMessage(arg2)
+
 
 -- tiny Just using 1 line so no need for scrollbars
 --[[
@@ -316,11 +317,14 @@ end
 
 --tiny 
 -- trade frame
--- dont need arg 4 and 5 that is the playername
-function PLH_CreateTradeFrame(arg1, arg2, arg3)
+-- dont need arg 5 that is the playername
+-- arg 4 is "announce roll is over " TRADEMETEXT = TRADEMETEXT .. item from core.lua
+function PLH_CreateTradeFrame(arg1, arg2, arg3, arg4)
+local _, typeOfInstancetosendchat, difficultychat, _, _, _, _, _, _ = GetInstanceInfo()
 local frame  = CreateFrame("Frame", "PLHLootFrame", UIParent)
+
 frame.width  = 500
-frame.height = 100
+frame.height = 110
 frame:SetFrameStrata("FULLSCREEN_DIALOG")
 frame:SetSize(frame.width, frame.height)
 frame:SetPoint("CENTER", UIParent, "RIGHT", -300, arg1)
@@ -348,17 +352,61 @@ tinsert(UISpecialFrames, "PLHTradeFrame")
 
 -- Close button
 local closeButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
-closeButton:SetPoint("BOTTOM", -60, 10)
+closeButton:SetPoint("BOTTOM", -150, 10)
 closeButton:SetHeight(25)
 closeButton:SetWidth(50)
 closeButton:SetText("CLOSE")
-closeButton:SetScript("OnClick", function(self)	 PlaySound("igMainMenuOption") self:GetParent():Hide() end)
+closeButton:SetScript("OnClick", function(self) self:GetParent():Hide() end)
 frame.closeButton = closeButton
+
+--trademe button
+
+local trademeButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
+
+trademeButton:SetPoint("BOTTOM", 0, 10)
+trademeButton:SetHeight(25)
+trademeButton:SetWidth(210)
+trademeButton:SetText("EndRoll-Target is announced winner")
+local vinner = GetUnitName("PLAYERTARGET", showServerName)
+
+if typeOfInstancetosendchat == "none" then
+	trademeButton:SetScript("OnClick", function(self)
+	vinner = GetUnitName("PLAYERTARGET", showServerName)
+		if vinner then -- check if player accually have targeted a unit
+			arg4 = arg4 .. " " .. vinner .. " won the roll"
+		end
+	SendChatMessage(arg4, "say", nil )  
+	end)	--GetUnitName("PLAYERTARGET")
+else
+-- Raid finder difficulty is 7 and 17
+		if (difficultychat == 7) or (difficultychat == 17) then
+	trademeButton:SetScript("OnClick", function(self) 
+	vinner = GetUnitName("PLAYERTARGET", showServerName)
+		if vinner then -- check if player accually have targeted a unit
+			arg4 = arg4 .. ".  " .. vinner .. " won the roll"
+		end	  
+	SendChatMessage(arg4, "INSTANCE_CHAT" )  
+	end)
+		else
+	trademeButton:SetScript("OnClick", function(self)
+	vinner = GetUnitName("PLAYERTARGET", showServerName)
+		if vinner then -- check if player accually have targeted a unit
+			arg4 = arg4 .. " " .. vinner .. " won the roll"
+		end		
+		SendChatMessage(arg4, typeOfInstancetosendchat, nil )
+	end) 
+		end
+end
+	frame.trademeButton = trademeButton
+
+
+
+
 
 -- Announce button
 local whisperButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
-local _, typeOfInstancetosendchat, difficultychat, _, _, _, _, _, _ = GetInstanceInfo()
-whisperButton:SetPoint("BOTTOM", 60, 10)
+
+whisperButton:SetPoint("BOTTOM", 140, 10)
 whisperButton:SetHeight(25)
 whisperButton:SetWidth(50)
 whisperButton:SetText("Announce")
@@ -367,6 +415,7 @@ if typeOfInstancetosendchat == "none" then
 else
 -- Raid finder difficulty is 7 and 17
 		if (difficultychat == 7) or (difficultychat == 17) then
+	
 	      whisperButton:SetScript("OnClick", function(self) SendChatMessage(arg3, "INSTANCE_CHAT" )  end)
 		else
 		  whisperButton:SetScript("OnClick", function(self) SendChatMessage(arg3, typeOfInstancetosendchat, nil )  end) 
@@ -375,6 +424,7 @@ end
 	frame.whisperButton = whisperButton
 
 -- ScrollingMessageFrame
+local message1 = "|cFF00FF00If no target is made, name is not added to Endroll|r"
 local messageFrame = CreateFrame("ScrollingMessageFrame", nil, frame)
 messageFrame:SetPoint("CENTER", 15, 20)
 messageFrame:SetSize(frame.width, frame.height - 50)
@@ -387,7 +437,7 @@ messageFrame:SetMaxLines(300)
 frame.messageFrame = messageFrame
 
 messageFrame:AddMessage(arg2)
-
+messageFrame:AddMessage(message1)
 
 
 messageFrame:SetScript("OnHyperlinkClick", function(self, link, text)
