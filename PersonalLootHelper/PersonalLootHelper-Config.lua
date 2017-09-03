@@ -130,7 +130,7 @@ function PLH_CreateOptionsPanel()
 
 	local WhisperInputLabel = PLH_WhisperInput:CreateFontString(nil, 'ARTWORK', 'GameFontHighlight')
 	WhisperInputLabel:SetPoint('LEFT', PLH_HighlightRaidFramesCheckbox, 'LEFT', 0, -29)
-	WhisperInputLabel:SetText('Enter your custom text (clear to go back to defaults)')
+	WhisperInputLabel:SetText('Whisper DISABLED, Targert player and do a whisper')
 -- tiny
 	
 	--[[ Thank you message ]] --
@@ -168,7 +168,7 @@ function PLH_CreateOptionsPanel()
 	-- tiny end	
 	-- tiny start
 		if PLH_WHISPER_TEXT == nil or PLH_WHISPER_TEXT == "" then
-		   PLH_WHISPER_TEXT = 'Sorry to bother you, but the item you just received is an upgrade for me. If you need it yourself, just ignore my message.'
+		   PLH_WHISPER_TEXT = 'im using PLH frames, and been too lazy to change default whisper'
 		end   
 	-- tiny end
 		PLH_INCLUDE_BOE = PLH_IncludeBOECheckbox:GetChecked()
@@ -228,6 +228,7 @@ closeButton:SetScript("OnClick", function(self)	self:GetParent():Hide() end)
 frame.closeButton = closeButton
 
 -- Whisper button
+--[[Removed
 local whisperButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
 whisperButton:SetPoint("BOTTOM", 60, 10)
 whisperButton:SetHeight(25)
@@ -235,7 +236,7 @@ whisperButton:SetWidth(50)
 whisperButton:SetText("WHISPER")
 whisperButton:SetScript("OnClick", function(self) SendChatMessage(arg3, "WHISPER", nil, arg4)  end)
 frame.whisperButton = whisperButton
---
+]]--
 -- Target button
     local HSframe = CreateFrame("BUTTON","homeButton", frame, "SecureActionButtonTemplate")
     HSframe:SetPoint("BOTTOM", 0, 15)
