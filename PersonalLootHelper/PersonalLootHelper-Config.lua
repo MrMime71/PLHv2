@@ -373,17 +373,20 @@ if typeOfInstancetosendchat == "none" then
 	trademeButton:SetScript("OnClick", function(self)
 	vinner = GetUnitName("PLAYERTARGET", showServerName)
 		if vinner then -- check if player accually have targeted a unit
-			arg4 = arg4 .. " " .. vinner .. " won the roll"
+--			arg4 = arg4 .. " " .. vinner .. " won the roll"
+            arg4 = vinner .. " won the roll. " .. arg4 
 		end
 	SendChatMessage(arg4, "say", nil )  
 	end)	--GetUnitName("PLAYERTARGET")
 else
 -- Raid finder difficulty is 7 and 17
-		if (difficultychat == 7) or (difficultychat == 17) then
+-- Timewalking is 24 and 33
+		if (difficultychat == 7) or (difficultychat == 17) or (difficultychat == 24) or (difficultychat == 33) then
 	trademeButton:SetScript("OnClick", function(self) 
 	vinner = GetUnitName("PLAYERTARGET", showServerName)
 		if vinner then -- check if player accually have targeted a unit
-			arg4 = arg4 .. ".  " .. vinner .. " won the roll"
+--			arg4 = arg4 .. ".  " .. vinner .. " won the roll"
+			arg4 = vinner .. " won the roll. " .. arg4 
 		end	  
 	SendChatMessage(arg4, "INSTANCE_CHAT" )  
 	end)
@@ -391,7 +394,8 @@ else
 	trademeButton:SetScript("OnClick", function(self)
 	vinner = GetUnitName("PLAYERTARGET", showServerName)
 		if vinner then -- check if player accually have targeted a unit
-			arg4 = arg4 .. " " .. vinner .. " won the roll"
+--			arg4 = arg4 .. " " .. vinner .. " won the roll"
+            arg4 = vinner .. " won the roll. " .. arg4 
 		end		
 		SendChatMessage(arg4, typeOfInstancetosendchat, nil )
 	end) 
@@ -414,7 +418,8 @@ if typeOfInstancetosendchat == "none" then
 	whisperButton:SetScript("OnClick", function(self) SendChatMessage(arg3, "say", nil )  end)	
 else
 -- Raid finder difficulty is 7 and 17
-		if (difficultychat == 7) or (difficultychat == 17) then
+-- Timewalking is 24 and 33
+		if (difficultychat == 7) or (difficultychat == 17) or (difficultychat == 24) or (difficultychat == 33) then
 	
 	      whisperButton:SetScript("OnClick", function(self) SendChatMessage(arg3, "INSTANCE_CHAT" )  end)
 		else
