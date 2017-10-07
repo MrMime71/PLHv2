@@ -399,8 +399,8 @@ local TRADEMETEXT = "Roll finnished! Winner trade me for "
 local TRADEMETEXT2 = "Roll finnished! Winner trade me for "
 local LOOTWINDOW_VERTICAL_SPACE = 0
 local TRADEWINDOW_VERTICAL_SPACE = 0
---local TESTITEM = '\124cffa335ee\124Hitem:141570:0:0:0:0:0:0:0:0:0:0\124h[Cainen\'s Preeminent Chestguard]\124h\124r'
-local TESTITEM = '\124cffa335ee\124Hitem:67151:0:0:0:0:0:0:0:0:0:0\124h[My TestItem]\124h\124r'
+local TESTITEM = '\124cffa335ee\124Hitem:141570:0:0:0:0:0:0:0:0:0:0\124h[Cainen\'s Preeminent Chestguard]\124h\124r'
+--local TESTITEM = '\124cffa335ee\124Hitem:67151:0:0:0:0:0:0:0:0:0:0\124h[My TestItem]\124h\124r'
 local SENDSTRING = 'TEST' -- This is used for lootframe
 local SENDSTRING2 = 'TEST' -- this is used for tradeframe
 --tiny stop
@@ -1611,7 +1611,7 @@ local function PerformNotify(fullItemInfo, characterName)
 						PLH_WHISPER_TEXT2 = "Roll for " .. item .. " if you need it!"
 						TRADEMETEXT = TRADEMETEXT2 .. item
 						PLH_CreateTradeFrame(TRADEWINDOW_VERTICAL_SPACE, SENDSTRING2, PLH_WHISPER_TEXT2, TRADEMETEXT)
-						TRADEWINDOW_VERTICAL_SPACE = TRADEWINDOW_VERTICAL_SPACE + 110
+						TRADEWINDOW_VERTICAL_SPACE = TRADEWINDOW_VERTICAL_SPACE + 120
 							if TRADEWINDOW_VERTICAL_SPACE > 499 then
 								TRADEWINDOW_VERTICAL_SPACE = 0
 							end				
@@ -1624,7 +1624,7 @@ local function PerformNotify(fullItemInfo, characterName)
 						TARGETUNIT = PLH_GetNameWithoutRealm(characterName)
 						PLH_CreateLootFrame(LOOTWINDOW_VERTICAL_SPACE, SENDSTRING, PLH_WHISPER_TEXT, characterName, TARGETUNIT)
 						--PLH_CreateLootFrame(LOOTWINDOW_VERTICAL_SPACE, SENDSTRING)
-						LOOTWINDOW_VERTICAL_SPACE = LOOTWINDOW_VERTICAL_SPACE + 110
+						LOOTWINDOW_VERTICAL_SPACE = LOOTWINDOW_VERTICAL_SPACE + 120
 							if LOOTWINDOW_VERTICAL_SPACE > 499 then
 								LOOTWINDOW_VERTICAL_SPACE = 0
 							end
@@ -2286,9 +2286,9 @@ function SlashCmdList.PLHelperCommand(msg, editbox)
 -- PLH_WHISPER_TEXT is stored in local variables
 -- PLH WHISPER_UPGRADE is stored in local valribales	        
 			PLH_CreateLootFrame(LOOTWINDOW_VERTICAL_SPACE, SENDSTRING, PLH_WHISPER_TEXT, characterName, TARGETUNIT)
-			LOOTWINDOW_VERTICAL_SPACE = LOOTWINDOW_VERTICAL_SPACE + 100
-			print ("createlootframe")
-			if LOOTWINDOW_VERTICAL_SPACE > 399 then
+			LOOTWINDOW_VERTICAL_SPACE = LOOTWINDOW_VERTICAL_SPACE + 120
+			--debug print ("createlootframe")
+			if LOOTWINDOW_VERTICAL_SPACE > 499 then
 			LOOTWINDOW_VERTICAL_SPACE = 0
 			end
 			
@@ -2303,13 +2303,22 @@ function SlashCmdList.PLHelperCommand(msg, editbox)
 						PLH_WHISPER_TEXT2 = "Roll for " .. item .. " if you need it!"
 						TRADEMETEXT = TRADEMETEXT2 .. item
 						PLH_CreateTradeFrame(TRADEWINDOW_VERTICAL_SPACE, SENDSTRING2, PLH_WHISPER_TEXT2, TRADEMETEXT)
-						TRADEWINDOW_VERTICAL_SPACE = TRADEWINDOW_VERTICAL_SPACE + 100
+						TRADEWINDOW_VERTICAL_SPACE = TRADEWINDOW_VERTICAL_SPACE + 120
 							if TRADEWINDOW_VERTICAL_SPACE > 499 then
 								TRADEWINDOW_VERTICAL_SPACE = 0
-							end				
+-- PLH toggle Notify by Rondowar
+	elseif msg == 'togglenotify' then
+			if PLH_NOTIFY_GROUP then
+				PLH_NOTIFY_GROUP = false
+				PLH_SendUserMessage("notify group has been disabled")
+			else
+				PLH_NOTIFY_GROUP = true
+				PLH_SendUserMessage("notify group has been enabled")
+			end
+		end				
 -- tiny end trade frame	
 	else
-		PLH_SendUserMessage('Unknown parameter. Options are:\n  [/plh]  :  open interface options\n  [/plh endroll]  :  force current roll to end')
+		PLH_SendUserMessage('Unknown parameter. Options are:\n  [/plh]  :  open interface options\n  [/plh endroll]  :  force current roll to end\n [plh togglenotify]  :  Used to toggle on or off announces')
 	end
 end
 

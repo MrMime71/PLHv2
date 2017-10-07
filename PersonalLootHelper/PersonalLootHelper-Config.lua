@@ -192,7 +192,7 @@ end
 function PLH_CreateLootFrame(arg1, arg2, arg3, arg4, arg5)
 local frame  = CreateFrame("Frame", "PLHLootFrame", UIParent)
 frame.width  = 500
-frame.height = 110
+frame.height = 120
 frame:SetFrameStrata("FULLSCREEN_DIALOG")
 frame:SetSize(frame.width, frame.height)
 frame:SetPoint("CENTER", UIParent, "CENTER", 0, arg1)
@@ -324,7 +324,7 @@ local _, typeOfInstancetosendchat, difficultychat, _, _, _, _, _, _ = GetInstanc
 local frame  = CreateFrame("Frame", "PLHLootFrame", UIParent)
 
 frame.width  = 500
-frame.height = 110
+frame.height = 120
 frame:SetFrameStrata("FULLSCREEN_DIALOG")
 frame:SetSize(frame.width, frame.height)
 frame:SetPoint("CENTER", UIParent, "RIGHT", -300, arg1)
@@ -381,7 +381,8 @@ if typeOfInstancetosendchat == "none" then
 else
 -- Raid finder difficulty is 7 and 17
 -- Timewalking is 24 and 33
-		if (difficultychat == 7) or (difficultychat == 17) or (difficultychat == 24) or (difficultychat == 33) then
+-- 2 is heroic dungeonfinder
+		if (difficultychat == 7) or (difficultychat == 17) or (difficultychat == 24) or (difficultychat == 33) or (difficultychat == 2) then
 	trademeButton:SetScript("OnClick", function(self) 
 	vinner = GetUnitName("PLAYERTARGET", showServerName)
 		if vinner then -- check if player accually have targeted a unit
@@ -414,12 +415,17 @@ whisperButton:SetPoint("BOTTOM", 140, 10)
 whisperButton:SetHeight(25)
 whisperButton:SetWidth(50)
 whisperButton:SetText("Announce")
+--debug
+--print(typeOfInstancetosendchat)
+--print(difficultychat)
+--end debug
 if typeOfInstancetosendchat == "none" then
 	whisperButton:SetScript("OnClick", function(self) SendChatMessage(arg3, "say", nil )  end)	
 else
 -- Raid finder difficulty is 7 and 17
 -- Timewalking is 24 and 33
-		if (difficultychat == 7) or (difficultychat == 17) or (difficultychat == 24) or (difficultychat == 33) then
+-- 2 is Heroic Dungeonfinder
+		if (difficultychat == 7) or (difficultychat == 17) or (difficultychat == 24)  or (difficultychat == 33) or (difficultychat == 2) then
 	
 	      whisperButton:SetScript("OnClick", function(self) SendChatMessage(arg3, "INSTANCE_CHAT" )  end)
 		else
