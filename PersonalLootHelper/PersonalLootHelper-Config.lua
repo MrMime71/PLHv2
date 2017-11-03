@@ -168,7 +168,7 @@ function PLH_CreateOptionsPanel()
 	-- tiny end	
 	-- tiny start
 		if PLH_WHISPER_TEXT == nil or PLH_WHISPER_TEXT == "" then
-		   PLH_WHISPER_TEXT = 'Sorry to bother you, but the item you just received is an upgrade for me. If you need it yourself, just ignore my message.'
+		   PLH_WHISPER_TEXT = 'Hi. Do you need that item? Its an upgrade for me :D'
 		end   
 	-- tiny end
 		PLH_INCLUDE_BOE = PLH_IncludeBOECheckbox:GetChecked()
