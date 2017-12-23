@@ -406,7 +406,7 @@ local SENDSTRING2 = 'TEST' -- this is used for tradeframe
 --tiny stop
 --tiny start
 local DEFAULT_WHISPER_UPGRADE = false
-local DEFAULT_WHISPER_TEXT = "Hello There. You need that?. It's an upgrade for me."
+local DEFAULT_WHISPER_TEXT = "If you dont need that, do you mind raidroll for it?"
 local TARGETUNIT = 'test'
 local PLH_WHISPER_TEXT2 = "test"
 --local PLH_WHISPER_TEXT = "Hi. You need that. Its an upgrade for me :-)"
