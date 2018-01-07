@@ -43,10 +43,9 @@
 <p>Frames added for self lazyness on Trading and Asking for loot.</p>
 <p>Screenshot here: <a href="http://imgur.com/a/0hoxC">http://imgur.com/a/0hoxC</a></p>
 
-<p>Somone had issues with too large text inside the frames. 
-for createframe: In config file line 263, change the messageFrame:SetFontObject(GameFontNormalLarge) to messageFrame:SetFontObject(GameFontNormal)</p>
-<p>For Tradeframe change the same in around line 441</p>
-<p>If you need even more control over the size, replace those lines with  the  line under where 14 is the fontsize</p>
+<p>Somone had issues with too large text inside the frames. </p>
+
+<p>Change the way fontsize was applied. Line 269 and 449 of PersonalLootHelper-Config.lua</p>
 <p>messageFrame:SetFont("Fonts\\ARIALN.TTF", 14, nil)</p>
 messageFrame:SetFont("Fonts\\ARIALN.TTF", 14, nil)
 List of fonts here: https://github.com/vikingeff/addons/blob/master/Cooldowns/WoW%20Font%20List.txt
