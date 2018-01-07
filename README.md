@@ -46,7 +46,8 @@
 <p>Somone had issues with too large text inside the frames. 
 for createframe: In config file line 263, change the messageFrame:SetFontObject(GameFontNormalLarge) to messageFrame:SetFontObject(GameFontNormal)</p>
 <p>For Tradeframe change the same in around line 441</p>
-
+<p>If you need even more control over the size, replace those lines with  the  line under where 14 is the fontsize</p>
+<p>messageFrame:SetFont("Fonts\\FRIZQT__.TTF", 14, "OUTLINE, MONOCHROME")</p>
 </article>
   </div>
 
