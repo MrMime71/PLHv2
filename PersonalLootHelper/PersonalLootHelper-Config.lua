@@ -168,7 +168,7 @@ function PLH_CreateOptionsPanel()
 	-- tiny end	
 	-- tiny start
 		if PLH_WHISPER_TEXT == nil or PLH_WHISPER_TEXT == "" then
-		   PLH_WHISPER_TEXT = 'Hi. Do you need that item? Its an upgrade for me :D'
+		   PLH_WHISPER_TEXT = 'Sorry to bother you, but the item you just received is an upgrade for me. If you need it yourself, just ignore my message.'
 		end   
 	-- tiny end
 		PLH_INCLUDE_BOE = PLH_IncludeBOECheckbox:GetChecked()
@@ -260,14 +260,14 @@ frame.whisperButton = whisperButton
 local messageFrame = CreateFrame("ScrollingMessageFrame", nil, frame)
 messageFrame:SetPoint("CENTER", 15, 20)
 messageFrame:SetSize(frame.width, frame.height - 50)
-messageFrame:SetFontObject(GameFontNormalLarge)
+--messageFrame:SetFontObject(GameFontNormalLarge)
 messageFrame:SetTextColor(1, 1, 1, 1) -- default color
 messageFrame:SetJustifyH("LEFT")
 messageFrame:SetHyperlinksEnabled(true)
 messageFrame:SetFading(false)
 messageFrame:SetMaxLines(300)
+messageFrame:SetFont("Fonts\\ARIALN.TTF", 14, nil)
 frame.messageFrame = messageFrame
-
 messageFrame:AddMessage(arg2)
 
 
@@ -439,14 +439,14 @@ local message1 = "|cFF00FF00If no target is made, name is not added to Endroll|r
 local messageFrame = CreateFrame("ScrollingMessageFrame", nil, frame)
 messageFrame:SetPoint("CENTER", 15, 20)
 messageFrame:SetSize(frame.width, frame.height - 50)
-messageFrame:SetFontObject(GameFontNormalLarge)
+--messageFrame:SetFontObject(GameFontNormalLarge)
 messageFrame:SetTextColor(1, 1, 1, 1) -- default color
 messageFrame:SetJustifyH("LEFT")
 messageFrame:SetHyperlinksEnabled(true)
 messageFrame:SetFading(false)
 messageFrame:SetMaxLines(300)
 frame.messageFrame = messageFrame
-
+messageFrame:SetFont("Fonts\\ARIALN.TTF", 14, nil)
 messageFrame:AddMessage(arg2)
 messageFrame:AddMessage(message1)
 
