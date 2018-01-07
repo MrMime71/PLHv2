@@ -43,8 +43,9 @@
 <p>Frames added for self lazyness on Trading and Asking for loot.</p>
 <p>Screenshot here: <a href="http://imgur.com/a/0hoxC">http://imgur.com/a/0hoxC</a></p>
 
-<p>Somone had issues with too large text
-In config file line 263, change the messageFrame:SetFontObject(GameFontNormalLarge) to messageFrame:SetFontObject(GameFontNormal)</p>
+<p>Somone had issues with too large text inside the frames. 
+for createframe: In config file line 263, change the messageFrame:SetFontObject(GameFontNormalLarge) to messageFrame:SetFontObject(GameFontNormal)</p>
+<p>For Tradeframe change the same in around line 441</p>
 
 </article>
   </div>
