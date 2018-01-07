@@ -47,7 +47,8 @@
 for createframe: In config file line 263, change the messageFrame:SetFontObject(GameFontNormalLarge) to messageFrame:SetFontObject(GameFontNormal)</p>
 <p>For Tradeframe change the same in around line 441</p>
 <p>If you need even more control over the size, replace those lines with  the  line under where 14 is the fontsize</p>
-<p>messageFrame:SetFont("Fonts\\FRIZQT__.TTF", 14, "OUTLINE, MONOCHROME")</p>
+<p>messageFrame:SetFont("Fonts\\ARIALN.TTF", 14, nil)</p>
+messageFrame:SetFont("Fonts\\ARIALN.TTF", 14, nil)
 List of fonts here: https://github.com/vikingeff/addons/blob/master/Cooldowns/WoW%20Font%20List.txt
 </article>
   </div>
