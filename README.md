@@ -47,7 +47,7 @@
 
 <p>Change the way fontsize was applied. Line 269 and 449 of PersonalLootHelper-Config.lua</p>
 <p>messageFrame:SetFont("Fonts\\ARIALN.TTF", 14, nil)</p>
-messageFrame:SetFont("Fonts\\ARIALN.TTF", 14, nil)
+
 List of fonts here: https://github.com/vikingeff/addons/blob/master/Cooldowns/WoW%20Font%20List.txt
 </article>
   </div>
