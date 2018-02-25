@@ -50,8 +50,7 @@
 
 List of fonts here: https://github.com/vikingeff/addons/blob/master/Cooldowns/WoW%20Font%20List.txt
 
-Cor3 med an alternate version https://pastebin.com/5eHsuKun
-Replace the content in config.lua with whats in the pastebin
+Cor3 med an alternate version that includes tradebutton and roll tracker https://github.com/MrMime71/plhv2Corey 
 </article>
   </div>
 
