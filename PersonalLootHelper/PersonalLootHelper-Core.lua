@@ -419,7 +419,7 @@ local NOTIFY_MODE_COORDINATE_ROLLS = 3
 
 local DEFAULT_NOTIFY_MODE = NOTIFY_MODE_SELF
 local DEFAULT_INCLUDE_BOE = false
-local DEFAULT_MIN_ILVL = 528  -- personal loot was introduced with Siege of Orgrimmar, which started at ilvl 528
+local DEFAULT_MIN_ILVL = 100  -- personal loot was introduced with Siege of Orgrimmar, which started at ilvl 528
 local DEFAULT_MIN_QUALITY = 3  -- Rare
 local DEFAULT_DEBUG = false
 local DEFAULT_CURRENT_SPEC_ONLY = false
