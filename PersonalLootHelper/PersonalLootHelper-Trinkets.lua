@@ -7,20 +7,14 @@ to easily populate these arrays:
 	to obtain IDs: http://www.wowhead.com/items/armor/trinkets/role:1?filter=166:151;7:1;0:0#0-3+2
 ]]--	
 PLH_TRINKET_AGILITY_DPS = {
-.. 8,1
-165221, -- Sinister Aspirant's Emblem
-165667, -- Razzashi Tooth Medallion
-165662, -- Kezan Stamped Bijou
-165660, -- Chargestone of the Thunder King's Court
+
+--  8,1 
 165572, -- Variable Intensity Gigavolt Oscillating Reactor
-165807, -- Sinister Gladiator's Safeguard
-165055, -- Sinister Gladiator's Medallion
-165806, -- Sinister Gladiator's Maledict
-165056, -- Sinister Gladiator's Emblem
-167868, -- PH Crucible Tank Trinket
-167866, -- PH Crucible Physical Trinket
-167865, -- PH Crucible Heal Trinket
-167867, -- PH Crucible Caster Trinket
+165579, -- Kimbul's Razor Claw
+165568, -- Invocation of Yu'lon
+166794, -- Forest Lord's Razorleaf
+165573, -- Diamond-Laced Refracting Prism
+165577, -- Bwonsamdi's Bargain
 
 	-- 8.0 trinkets
 159613, -- 8.0 - PH Dungeon - AGI Trinket
@@ -149,20 +143,13 @@ PLH_TRINKET_AGILITY_DPS = {
 
 PLH_TRINKET_INTELLECT_DPS = {
 -- 8.1 trinkets
-165220, -- Sinister Aspirant's Medallion
-165221, -- Sinister Aspirant's Emblem
-165664, -- Sea Giant's Tidestone
-165666, -- Moonstone of Zin-Azshari
 165569, -- Ward of Envelopment
 165576, -- Tidestorm Codex
-165807, -- Sinister Gladiator's Safeguard
-165055, -- Sinister Gladiator's Medallion
-165806, -- Sinister Gladiator's Maledict
-165056, -- Sinister Gladiator's Emblem
 165578, -- Mirror of Entwined Fate
 165571, -- Incandescent Sliver
 165581, -- Crest of Pa'ku
 166418, -- Crest of Pa'ku
+166793, -- Ancient Knot of Wisdom
 
 	-- 8.0 trinkets
 158156, -- 8.0 PH Trinket
@@ -294,22 +281,13 @@ PLH_TRINKET_INTELLECT_DPS = {
 
 PLH_TRINKET_STRENGTH_DPS = {
 	-- 8.0trinkets
-158157, -- 8.0 PH Trinket
-158158, -- 8.0 PH Trinket
-158166, -- 8.0 PH Trinket
-158167, -- 8.0 PH Trinket
-159766, -- 8.0 PH Trinket
-159935, -- 8.0 PH Trinket
-155566, -- 8.0 PH - Unused - Trinket
-158214, -- 8.0 PH - Unused - Trinket
-158217, -- 8.0 PH - Unused - Trinket
-158559, -- 8.0 PH - Unused - Trinket
-158560, -- 8.0 PH - Unused - Trinket
-160264, -- 8.0 PH - Unused - Trinket
-158448, -- 8.0 PH - Trinket
-158449, -- 8.0 PH - Trinket
-158450, -- 8.0 PH - Trinket
-158451, -- 8.0 PH - Trinket
+165580, -- Ramping Amplitude Gigavolt Engine
+166795, -- Knot of Ancient Fury
+165574, -- Grong's Primal Rage
+165570, -- Everchill Anchor
+165573, -- Diamond-Laced Refracting Prism
+165577, -- Bwonsamdi's Bargain
+	
 157813, -- 8.0 PH - Trinket
 155576, -- Zardax's Cracked Phylactery
 159977, -- Vindictive Golem Core
@@ -431,6 +409,14 @@ PLH_TRINKET_STRENGTH_DPS = {
 }
 
 PLH_TRINKET_HEALER = {
+--8.1 trinkets
+165569, -- Ward of Envelopment
+165576, -- Tidestorm Codex
+165578, -- Mirror of Entwined Fate
+165571, -- Incandescent Sliver
+165581, -- Crest of Pa'ku
+166418, -- Crest of Pa'ku
+166793, -- Ancient Knot of Wisdom
 	-- 8.0 trinkets
 158156, -- 8.0 PH Trinket
 158165, -- 8.0 PH Trinket
