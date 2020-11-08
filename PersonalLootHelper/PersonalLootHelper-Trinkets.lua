@@ -7,708 +7,440 @@ to easily populate these arrays:
 	to obtain IDs: http://www.wowhead.com/items/armor/trinkets/role:1?filter=166:151;7:1;0:0#0-3+2
 ]]--	
 PLH_TRINKET_AGILITY_DPS = {
+	-- 7.3 trinkets
+	152288, -- 7.3 Raid - Antorus - Boss 11 - Trinket Ranged WS
+	152285, -- 7.3 Raid - Antorus - Boss 11 - Trinket Melee Str WS
+	152701, -- 7.3 Raid - Antorus - Boss 11 - Trinket Melee Agi WS
+	151970, -- Vitality Resonator
+	151969, -- Terminus Signaling Beacon
+	151971, -- Sheath of Asara
+	151968, -- Shadow-Singed Fang
+	151964, -- Seeping Scourgewing
+	151962, -- Prototype Personnel Decimator
+	151961, -- Legionsteel Flywheel
+	152093, -- Gorshalach's Legacy
+	151963, -- Forgefiend's Fabricator
+	151967, -- Electrostatic Lasso
+	152782, -- Venerable Triad Statuette
+	152781, -- Unblemished Sigil of Argus
+	152783, -- Mac'aree Focusing Amethyst
+	153172, -- Doomed Exarch's Memento
+	
+	-- 7.2.5 trinkets
+	151190, -- Specter of Betrayal
+	150526,	-- Shadowmoon Insignia
+	150527,	-- Madness of the Betrayer
 
---  8,1 
-165572, -- Variable Intensity Gigavolt Oscillating Reactor
-165579, -- Kimbul's Razor Claw
-165568, -- Invocation of Yu'lon
-166794, -- Forest Lord's Razorleaf
-165573, -- Diamond-Laced Refracting Prism
-165577, -- Bwonsamdi's Bargain
+	-- 7.2 trinkets
+	147275, -- Beguiler's Talisman
+	144477, -- Splinters of Agronax
+	147011, -- Vial of Ceaseless Toxins
+	147012, -- Umbral Moonglaives
+	147016, -- Terror From Below
+	147017, -- Tarnished Sentinel Medallion
+	147018, -- Spectral Thurible
+	147009, -- Infernal Cinders
+	147015, -- Engine of Eradication
+	147010, -- Cradle of Anguish
+	
+	-- 7.1.5 and previously missed 7.1 trinkets
+	142506, -- Eye of Guarm
+	142166, -- Ethereal Urn
+	
+	-- 7.1 trinkets
+	140027, -- Ley Spark
+	142164, -- Toe Knee's Promise
+	142160, -- Mrrgria's Favor
+	142167, -- Eye of Command
+	142165, -- Deteriorated Construct Core
+	142159, -- Bloodstained Handkerchief
+	142157, -- Aran's Relaxing Ruby
 
-	-- 8.0 trinkets
-159613, -- 8.0 - PH Dungeon - AGI Trinket
-158452, -- 8.0 PH - Trinket
-158453, -- 8.0 PH - Trinket
-158454, -- 8.0 PH - Trinket
-158455, -- 8.0 PH - Trinket
-155578, -- Death Defier's Fetish
-155579, -- Crimson Lich Bijou
-160653, -- Xalzaix's Veiled Eye
-161375, -- Void Portal Stone
-161412, -- Spiritbound Voodoo Burl
-161415, -- Razorcrest of the Enraged Matriarch
-163935, -- Landoi's Scrutiny
-160648, -- Frenetic Corpuscle
-161418, -- Dunewalker's Survival Kit
-160652, -- Construct Overcharger
-158516, -- Privateer's Spyglass
-158512, -- Lucky Braid
-158571, -- Lucky Braid
-158575, -- Enchanted Devilsaur Claw
-158374, -- Tiny Electromental in a Jar
-158319, -- My'das Talisman
-159618, -- Mchimba's Ritual Bandages
-159617, -- Lustrous Golden Plumage
-159626, -- Lingering Sporepods
-159628, -- Kul Tiran Cannonball Runner
-155881, -- Harlan's Loaded Dice
-159614, -- Galecaller's Boon
-159623, -- Dead-Eye Spyglass
-159125, -- Darkmoon Deck: Fathoms
-159128, -- Darkmoon Deck: Blockades
-161811, -- Dread Combatant's Medallion
-161812, -- Dread Combatant's Emblem
-162897, -- Dread Aspirant's Medallion
-162898, -- Dread Aspirant's Emblem
-158224, -- Vial of Storms
-160263, -- Snowpelt Mangler
-158556, -- Siren's Tongue
-161119, -- Ravasaur Skull Bijou
-158162, -- Pearl Diver's Compass
-158216, -- Living Oil Cannister
-161125, -- Kaja-fied Banana
-161113, -- Incessantly Ticking Clock
-155568, -- Galewind Chimes
-158163, -- First Mate's Spyglass
-158154, -- Emblem of Zandalar
-158555, -- Doom Shroom
-158218, -- Dadalea's Wing
-161115, -- Cursed Captain's Charm
-161117, -- Berserker's Juju
-161674, -- Dread Gladiator's Medallion
-161675, -- Dread Gladiator's Emblem
-153413, -- Privateer's Spyglass
-153409, -- Lucky Braid
-154980, -- Lucky Braid
-154984, -- Enchanted Devilsaur Claw
-159766, -- 8.0 PH Trinket
-159935, -- 8.0 PH Trinket
-158221, -- 8.0 PH - Unused - Trinket
-158560, -- 8.0 PH - Unused - Trinket
-159977, -- Vindictive Golem Core
-155565, -- Trunksy
-159077, -- Ticker's Spare Catalyst
-159979, -- Rorgog's Antenna
-161289, -- Rikal's Shark Teeth
-158680, -- Rikal's Ritual Beads
-158219, -- Petula's Locket
-155567, -- Mr. Munchykins
-155564, -- Mercy's Psalter
-155569, -- Mayor Striggs
-158558, -- Luminous Honey Jar
-158681, -- Lightning Tether
-159976, -- Liberated Idol of Binding
-159978, -- Junji's Egg Timer
-159074, -- Jarkadiax's Other Eye
-159763, -- Idol of Vol'jamba
-159764, -- Enraged Diemetradon Fin
-159765, -- Empowered Shark's Tooth
-161182, -- Cracked Crawg Shackles
-158220, -- Cooper's Horseshoe
-159075, -- Bloodhex Talisman
--- Multiple Classes
-152637, -- Siren's Alchemist Stone
-159078, -- Potency Manipulator
-158225, -- Over-Engineered Flash Bulb
-158679, -- Maokka's Carving
-161222, -- Latency Manipulator
-158557, -- Heartsbane Charm
-152634, -- Endless Tincture of Renewed Combat
-161813, -- Dread Combatant's Insignia
-161903, -- Dread Combatant's Badge
-162899, -- Dread Aspirant's Insignia
-162966, -- Dread Aspirant's Badge
-161223, -- Agency Manipulator
-160262, -- "Relic of the Makers"
-158215, -- Whirlwing's Plumage
-159625, -- Vial of Animated Blood
-152632, -- Surging Alchemist Stone
-160753, -- Sanguinating Totem
-158164, -- Plunderbeard's Flask
-158153, -- Gilded Loa Figurine
-160833, -- Fetish of the Tormented Mind
-152636, -- Endless Tincture of Fractional Power
-158155, -- Dinobone Charm
-163703, -- Crawg Gnawed Femur
-159630, -- Balefire Branch
-159612, -- Azerokk's Resonating Heart
-160654, -- Vanquished Tendril of G'huun
-160656, -- Twitching Tentacle of Xalzaix
-161417, -- Sandscoured Idol
-161376, -- Prism of Dark Intensity
-161378, -- Plume of the Seaborne Avian
-161381, -- Permafrost-Encrusted Heart
-161473, -- Lion's Guile
-161419, -- Kraulok's Claw
-161413, -- Knot of Spiritual Fury
-157763, -- Engine of Eradication
-161380, -- Drust-Runed Icicle
-161676, -- Dread Gladiator's Insignia
-161902, -- Dread Gladiator's Badge
-161462, -- Doom's Wake
-152633, -- Alchemist Tincture - Caster(NEEDS NAME)
-152635, -- Alchemist Tincture - Caster(NEEDS NAME)
+	137419, -- Chrono Shard
+	133642, -- Horn of Valor
+	141537, -- Thrice-Accursed Compass
+	141482, -- Unstable Arcanocrystal
+	140794, -- Arcanogolem Digit
+	140806, -- Convergence of Fates
+	140808, -- Draught of Souls
+	140796, -- Entwined Elemental Foci
+	140801, -- Fury of the Burning Sky
+	140798, -- Icon of Rot
+	140802, -- Nightblooming Frond
+	136258, -- Legion Season 1 EliteVindictive Gladiator's Insignia of Conquest
+	136145, -- Legion Season 1 EliteVindictive Gladiator's Insignia of Conquest
+	139329, -- Bloodthirsty Instinct
+	139334, -- Nature's Call
+	139320, -- Ravaged Seed Pod
+	139325, -- Spontaneous Appendages
+	139323, -- Twisting Wind
+	138224, -- Unstable Horrorslime
+	135806, -- Legion Season 1Vindictive Gladiator's Insignia of Conquest
+	135693, -- Legion Season 1Vindictive Gladiator's Insignia of Conquest
+	136716, -- Caged Horror
+	137459, -- Chaos Talisman
+	137446, -- Elementium Bomb Squirrel Generator
+	133641, -- Eye of Skovald
+	137539, -- Faulty Countermeasure
+	137329, -- Figurehead of the Naglfar
+	137369, -- Giant Ornamental Pearl
+	136975, -- Hunger of the Pack
+	137357, -- Mark of Dargrul
+	133644, -- Memento of Angerboda
+	137541, -- Moonlit Prism
+	137349, -- Naraxas' Spiked Tongue
+	137312, -- Nightmare Egg Shell
+	137306, -- Oakheart's Gnarled Root
+	137433, -- Obelisk of the Void
+	136715, -- Spiked Counterweight
+	137367, -- Stormsinger Fulmination Charge
+	137373, -- Tempered Egg of Serpentrix
+	137406, -- Terrorbound Nexus
+	140026, -- The Devilsaur's Bite
+	137439, -- Tiny Oozeling in a Jar
+	137537, -- Tirathon's Betrayal
+	137486, -- Windscar Whetstone
+	135919, -- Legion Season 1Vindictive Combatant's Insignia of Conquest
+	136032, -- Legion Season 1Vindictive Combatant's Insignia of Conquest
+	139630, -- Etching of SargerasDemon Hunter
+	128958, -- Lekos' LeashDemon Hunter
+	129044, -- Frothing Helhound's Fury
+	131803 -- Spine of Barax
 }
 
 PLH_TRINKET_INTELLECT_DPS = {
--- 8.1 trinkets
-165569, -- Ward of Envelopment
-165576, -- Tidestorm Codex
-165578, -- Mirror of Entwined Fate
-165571, -- Incandescent Sliver
-165581, -- Crest of Pa'ku
-166418, -- Crest of Pa'ku
-166793, -- Ancient Knot of Wisdom
+	-- 7.3 trinkets
+	152288, -- 7.3 Raid - Antorus - Boss 11 - Trinket Ranged WS
+	151970, -- Vitality Resonator
+	151969, -- Terminus Signaling Beacon
+	151971, -- Sheath of Asara
+	151962, -- Prototype Personnel Decimator
+	151955, -- Acrid Catalyst Injector
+	152782, -- Venerable Triad Statuette
+	152781, -- Unblemished Sigil of Argus
+	152783, -- Mac'aree Focusing Amethyst
+	153172, -- Doomed Exarch's Memento
+	151310, -- Reality Breacher
+	
+	-- 7.2.5 trinkets
+	150522,	-- The Skull of Gul'dan
+	150388,	-- Hibernation Crystal
+	
+	-- 7.2 trinkets
+	147276, -- Spellbinder's Seal
+	144480, -- Dreadstone of Endless Shadows
+	147019, -- Tome of Unraveling Sanity
+	147016, -- Terror From Below
+	147017, -- Tarnished Sentinel Medallion
+	147018, -- Spectral Thurible
+	147002, -- Charm of the Rising Tide
+	
+	-- 7.1.5 and previously missed 7.1 trinkets
+	142166, -- Ethereal Urn
 
-	-- 8.0 trinkets
-158156, -- 8.0 PH Trinket
-158165, -- 8.0 PH Trinket
-159766, -- 8.0 PH Trinket
-159935, -- 8.0 PH Trinket
-158222, -- 8.0 PH - Unused - Trinket
-158223, -- 8.0 PH - Unused - Trinket
-158560, -- 8.0 PH - Unused - Trinket
-158456, -- 8.0 PH - Trinket
-158457, -- 8.0 PH - Trinket
-158458, -- 8.0 PH - Trinket
-158459, -- 8.0 PH - Trinket
-159977, -- Vindictive Golem Core
-155565, -- Trunksy
-159077, -- Ticker's Spare Catalyst
-158513, -- Shimmering Rune
-158572, -- Shimmering Rune
-153410, -- Shimmering Rune
-154981, -- Shimmering Rune
-155575, -- Sanguine Lich's Fetish
-159979, -- Rorgog's Antenna
-161289, -- Rikal's Shark Teeth
-158680, -- Rikal's Ritual Beads
-158219, -- Petula's Locket
-158515, -- Oceanographer's Weather Log
-153412, -- Oceanographer's Weather Log
-155567, -- Mr. Munchykins
-155564, -- Mercy's Psalter
-155569, -- Mayor Striggs
-158558, -- Luminous Honey Jar
-158681, -- Lightning Tether
-159976, -- Liberated Idol of Binding
-155580, -- Kel'vax's Splintered Phylactery
-159978, -- Junji's Egg Timer
-159074, -- Jarkadiax's Other Eye
-159763, -- Idol of Vol'jamba
-159764, -- Enraged Diemetradon Fin
-159765, -- Empowered Shark's Tooth
-161811, -- Dread Combatant's Medallion
-161812, -- Dread Combatant's Emblem
-162897, -- Dread Aspirant's Medallion
-162898, -- Dread Aspirant's Emblem
-161182, -- Cracked Crawg Shackles
-158220, -- Cooper's Horseshoe
-159075, -- Bloodhex Talisman
-158574, -- Bijou of the Golden City
-154983, -- Bijou of the Golden City
-158224, -- Vial of Storms
-159610, -- Vessel of Skittering Shadows
-160263, -- Snowpelt Mangler
-158556, -- Siren's Tongue
-159624, -- Rotcrusted Voodoo Doll
-158320, -- Revitalizing Voodoo Totem
-161119, -- Ravasaur Skull Bijou
-158162, -- Pearl Diver's Compass
-158216, -- Living Oil Cannister
-159631, -- Lady Waycrest's Music Box
-161125, -- Kaja-fied Banana
-161113, -- Incessantly Ticking Clock
-159615, -- Ignition Mage's Fuse
-159622, -- Hadal's Nautilus
-155568, -- Galewind Chimes
-158163, -- First Mate's Spyglass
-158368, -- Fangs of Intertwined Essence
-158154, -- Emblem of Zandalar
-158555, -- Doom Shroom
-158218, -- Dadalea's Wing
-161115, -- Cursed Captain's Charm
-159620, -- Conch of Dark Whispers
-161117, -- Berserker's Juju
-161414, -- Wing Bone of the Budding Tempest
-160651, -- Vigilant's Bloodshaper
-157766, -- Vial of Nightmare Fog
-161374, -- Tear of the Void
-161411, -- T'zane's Barkspines
-161472, -- Lion's Grace
-163937, -- Leyshock's Grand Compilation
-160649, -- Inoculating Extract
-161674, -- Dread Gladiator's Medallion
-161675, -- Dread Gladiator's Emblem
-161461, -- Doom's Hatred
-159127, -- Darkmoon Deck: Tides
-159126, -- Darkmoon Deck: Squalls
-161377, -- Azurethos' Singed Plumage
--- Multiple Classes
-152637, -- Siren's Alchemist Stone
-159078, -- Potency Manipulator
-158225, -- Over-Engineered Flash Bulb
-158679, -- Maokka's Carving
-161222, -- Latency Manipulator
-158557, -- Heartsbane Charm
-152634, -- Endless Tincture of Renewed Combat
-161813, -- Dread Combatant's Insignia
-161903, -- Dread Combatant's Badge
-162899, -- Dread Aspirant's Insignia
-162966, -- Dread Aspirant's Badge
-161223, -- Agency Manipulator
-160262, -- "Relic of the Makers"
-158215, -- Whirlwing's Plumage
-159625, -- Vial of Animated Blood
-152632, -- Surging Alchemist Stone
-160753, -- Sanguinating Totem
-158164, -- Plunderbeard's Flask
-158153, -- Gilded Loa Figurine
-160833, -- Fetish of the Tormented Mind
-152636, -- Endless Tincture of Fractional Power
-158155, -- Dinobone Charm
-163703, -- Crawg Gnawed Femur
-159630, -- Balefire Branch
-159612, -- Azerokk's Resonating Heart
-160654, -- Vanquished Tendril of G'huun
-160656, -- Twitching Tentacle of Xalzaix
-161417, -- Sandscoured Idol
-161376, -- Prism of Dark Intensity
-161378, -- Plume of the Seaborne Avian
-161381, -- Permafrost-Encrusted Heart
-161473, -- Lion's Guile
-161419, -- Kraulok's Claw
-161413, -- Knot of Spiritual Fury
-157763, -- Engine of Eradication
-161380, -- Drust-Runed Icicle
-161676, -- Dread Gladiator's Insignia
-161902, -- Dread Gladiator's Badge
-161462, -- Doom's Wake
-152633, -- Alchemist Tincture - Caster(NEEDS NAME)
-152635, -- Alchemist Tincture - Caster(NEEDS NAME)
+	-- 7.1 trinkets
+	140031, -- Mana Spark
+	142160, -- Mrrgria's Favor
+	142165, -- Deteriorated Construct Core
+	142157, -- Aran's Relaxing Ruby
+	
+	137419, -- Chrono Shard
+	133642, -- Horn of Valor
+	141482, -- Unstable Arcanocrystal
+	141536, -- Padawsen's Unlucky Charm
+	132970, -- Runas' Nearly Depleted Ley Crystal
+	136038, -- Legion Season 1Vindictive Combatant's Insignia of Dominance
+	135925, -- Legion Season 1Vindictive Combatant's Insignia of Dominance
+	132895, -- The Watcher's Divine Inspiration
+	137367, -- Stormsinger Fulmination Charge
+	137398, -- Portable Manacracker
+	121810, -- Pocket Void Portal
+	137433, -- Obelisk of the Void
+	137306, -- Oakheart's Gnarled Root
+	137349, -- Naraxas' Spiked Tongue
+	137541, -- Moonlit Prism
+	137485, -- Infernal Writ
+	137329, -- Figurehead of the Naglfar
+	133641, -- Eye of Skovald
+	137446, -- Elementium Bomb Squirrel Generator
+	140030, -- Devilsaur Shock-Baton
+	137301, -- Corrupted Starlight
+	136716, -- Caged Horror
+	121652, -- Ancient Leaf
+	139326, -- Wriggling Sinew
+	140809, -- Whispers in the Dark
+	135699, -- Legion Season 1Vindictive Gladiator's Insignia of Dominance
+	136151, -- Legion Season 1 EliteVindictive Gladiator's Insignia of Dominance
+	135812, -- Legion Season 1Vindictive Gladiator's Insignia of Dominance
+	136264, -- Legion Season 1 EliteVindictive Gladiator's Insignia of Dominance
+	138224, -- Unstable Horrorslime
+	139323, -- Twisting Wind
+	139321, -- Swarming Plaguehive
+	140804, -- Star Gate
+	140800, -- Pharamere's Forbidden Grimore
+	140798, -- Icon of Rot
+	140801, -- Fury of the Burning Sky
+	140792, -- Erratic Metronome
+	139336 -- Bough of Corruption
 }
 
 PLH_TRINKET_STRENGTH_DPS = {
-	-- 8.0trinkets
-165580, -- Ramping Amplitude Gigavolt Engine
-166795, -- Knot of Ancient Fury
-165574, -- Grong's Primal Rage
-165570, -- Everchill Anchor
-165573, -- Diamond-Laced Refracting Prism
-165577, -- Bwonsamdi's Bargain
+	-- 7.3 trinkets
+	152285, -- 7.3 Raid - Antorus - Boss 11 - Trinket Melee Str WS
+	152701, -- 7.3 Raid - Antorus - Boss 11 - Trinket Melee Agi WS
+	151968, -- Shadow-Singed Fang
+	151964, -- Seeping Scourgewing
+	151961, -- Legionsteel Flywheel
+	152093, -- Gorshalach's Legacy
+	151963, -- Forgefiend's Fabricator
+	151967, -- Electrostatic Lasso
+	152782, -- Venerable Triad Statuette
+	152781, -- Unblemished Sigil of Argus
+	152783, -- Mac'aree Focusing Amethyst
+	153172, -- Doomed Exarch's Memento
+	151307, -- Void Stalker's Contract
 	
-157813, -- 8.0 PH - Trinket
-155576, -- Zardax's Cracked Phylactery
-159977, -- Vindictive Golem Core
-155565, -- Trunksy
-159077, -- Ticker's Spare Catalyst
-158511, -- Seabeast Tusk
-158570, -- Seabeast Tusk
-153408, -- Seabeast Tusk
-154979, -- Seabeast Tusk
-159979, -- Rorgog's Antenna
-161289, -- Rikal's Shark Teeth
-158680, -- Rikal's Ritual Beads
-158219, -- Petula's Locket
-158514, -- Petrified Basilisk Scale
-158573, -- Petrified Basilisk Scale
-153411, -- Petrified Basilisk Scale
-154982, -- Petrified Basilisk Scale
-155567, -- Mr. Munchykins
-155564, -- Mercy's Psalter
-155569, -- Mayor Striggs
-158558, -- Luminous Honey Jar
-158681, -- Lightning Tether
-159976, -- Liberated Idol of Binding
-159978, -- Junji's Egg Timer
-159074, -- Jarkadiax's Other Eye
-159763, -- Idol of Vol'jamba
-159764, -- Enraged Diemetradon Fin
-159765, -- Empowered Shark's Tooth
-161811, -- Dread Combatant's Medallion
-161812, -- Dread Combatant's Emblem
-162897, -- Dread Aspirant's Medallion
-162898, -- Dread Aspirant's Emblem
-161182, -- Cracked Crawg Shackles
-158220, -- Cooper's Horseshoe
-155577, -- Bone Lich Bijou
-159075, -- Bloodhex Talisman
-158224, -- Vial of Storms
-159629, -- Token of Ironside Blessing
-159971, -- Token of Ironside Blessing
-160263, -- Snowpelt Mangler
-158556, -- Siren's Tongue
-158712, -- Rezan's Gleaming Eye
-159611, -- Razdunk's Big Red Button
-161119, -- Ravasaur Skull Bijou
-158162, -- Pearl Diver's Compass
-158367, -- Merektha's Fang
-159618, -- Mchimba's Ritual Bandages
-158216, -- Living Oil Cannister
-159626, -- Lingering Sporepods
-161125, -- Kaja-fied Banana
-159627, -- Jes' Howler
-161113, -- Incessantly Ticking Clock
-159616, -- Gore-Crusted Butcher's Block
-155568, -- Galewind Chimes
-158163, -- First Mate's Spyglass
-158154, -- Emblem of Zandalar
-158555, -- Doom Shroom
-158218, -- Dadalea's Wing
-161115, -- Cursed Captain's Charm
-159619, -- Briny Barnacle
-161117, -- Berserker's Juju
-160653, -- Xalzaix's Veiled Eye
-160655, -- Syringe of Bloodborne Infirmity
-161382, -- Sublimating Iceshard
-161474, -- Lion's Strength
-161416, -- Hurricane Heart
-161379, -- Galecaller's Beak
-161674, -- Dread Gladiator's Medallion
-161675, -- Dread Gladiator's Emblem
-157765, -- Draught of Souls
-161463, -- Doom's Fury
-160650, -- Disc of Systematic Regression
-159125, -- Darkmoon Deck: Fathoms
-159128, -- Darkmoon Deck: Blockades
-157764, -- Claw of the Crystalline Scorpid
-163936, -- 'Bygone Bee' Almanac
--- Multiple Classes
-152637, -- Siren's Alchemist Stone
-159078, -- Potency Manipulator
-158225, -- Over-Engineered Flash Bulb
-158679, -- Maokka's Carving
-161222, -- Latency Manipulator
-158557, -- Heartsbane Charm
-152634, -- Endless Tincture of Renewed Combat
-161813, -- Dread Combatant's Insignia
-161903, -- Dread Combatant's Badge
-162899, -- Dread Aspirant's Insignia
-162966, -- Dread Aspirant's Badge
-161223, -- Agency Manipulator
-160262, -- "Relic of the Makers"
-158215, -- Whirlwing's Plumage
-159625, -- Vial of Animated Blood
-152632, -- Surging Alchemist Stone
-160753, -- Sanguinating Totem
-158164, -- Plunderbeard's Flask
-158153, -- Gilded Loa Figurine
-160833, -- Fetish of the Tormented Mind
-152636, -- Endless Tincture of Fractional Power
-158155, -- Dinobone Charm
-163703, -- Crawg Gnawed Femur
-159630, -- Balefire Branch
-159612, -- Azerokk's Resonating Heart
-160654, -- Vanquished Tendril of G'huun
-160656, -- Twitching Tentacle of Xalzaix
-161417, -- Sandscoured Idol
-161376, -- Prism of Dark Intensity
-161378, -- Plume of the Seaborne Avian
-161381, -- Permafrost-Encrusted Heart
-161473, -- Lion's Guile
-161419, -- Kraulok's Claw
-161413, -- Knot of Spiritual Fury
-157763, -- Engine of Eradication
-161380, -- Drust-Runed Icicle
-161676, -- Dread Gladiator's Insignia
-161902, -- Dread Gladiator's Badge
-161462, -- Doom's Wake
-152633, -- Alchemist Tincture - Caster(NEEDS NAME)
-152635, -- Alchemist Tincture - Caster(NEEDS NAME)
+	-- 7.2.5 trinkets
+	151190, -- Specter of Betrayal
+	150526,	-- Shadowmoon Insignia
+	150527,	-- Madness of the Betrayer
+
+	-- 7.2 trinkets
+	147278, -- Stalwart Crest
+	144482, -- Fel-Oiled Infernal Machine
+	147011, -- Vial of Ceaseless Toxins
+	147012, -- Umbral Moonglaives
+	147009, -- Infernal Cinders
+	147015, -- Engine of Eradication
+	147010, -- Cradle of Anguish
+	
+	-- 7.1.5 and previously missed 7.1 trinkets
+	142166, -- Ethereal Urn
+	142508, -- Chains of the Valorous
+
+	-- 7.1 trinkets
+	140035, -- Fluctuating Arc Capacitor
+	142164, -- Toe Knee's Promise
+	142167, -- Eye of Command
+	142159, -- Bloodstained Handkerchief
+	
+	137419, -- Chrono Shard
+	133642, -- Horn of Valor
+	141482, -- Unstable Arcanocrystal
+	141535, -- Ettin Fingernail
+	137486, -- Windscar Whetstone
+	136041, -- Legion Season 1Vindictive Combatant's Insignia of Victory
+	135928, -- Legion Season 1Vindictive Combatant's Insignia of Victory
+	137439, -- Tiny Oozeling in a Jar
+	137406, -- Terrorbound Nexus
+	129260, -- Tenacity of Cursed Blood
+	136715, -- Spiked Counterweight
+	137312, -- Nightmare Egg Shell
+	121806, -- Mountain Rage Shaker
+	121570, -- Might of the Forsaken
+	133644, -- Memento of Angerboda
+	137357, -- Mark of Dargrul
+	140034, -- Impact Tremor
+	136975, -- Hunger of the Pack
+	137369, -- Giant Ornamental Pearl
+	137539, -- Faulty Countermeasure
+	137459, -- Chaos Talisman
+	135815, -- Legion Season 1Vindictive Gladiator's Insignia of Victory
+	135702, -- Legion Season 1Vindictive Gladiator's Insignia of Victory
+	136154, -- Legion Season 1 EliteVindictive Gladiator's Insignia of Victory
+	136267, -- Legion Season 1 EliteVindictive Gladiator's Insignia of Victory
+	139328, -- Ursoc's Rending Paw
+	139325, -- Spontaneous Appendages
+	139320, -- Ravaged Seed Pod
+	139334, -- Nature's Call
+	140799, -- Might of Krosus
+	140796, -- Entwined Elemental Foci
+	140808, -- Draught of Souls
+	140806, -- Convergence of Fates
+	140790 -- Claw of the Crystalline Scorpid
 }
 
 PLH_TRINKET_HEALER = {
---8.1 trinkets
-165569, -- Ward of Envelopment
-165576, -- Tidestorm Codex
-165578, -- Mirror of Entwined Fate
-165571, -- Incandescent Sliver
-165581, -- Crest of Pa'ku
-166418, -- Crest of Pa'ku
-166793, -- Ancient Knot of Wisdom
-	-- 8.0 trinkets
-158156, -- 8.0 PH Trinket
-158165, -- 8.0 PH Trinket
-159766, -- 8.0 PH Trinket
-159935, -- 8.0 PH Trinket
-158222, -- 8.0 PH - Unused - Trinket
-158223, -- 8.0 PH - Unused - Trinket
-158560, -- 8.0 PH - Unused - Trinket
-158456, -- 8.0 PH - Trinket
-158457, -- 8.0 PH - Trinket
-158458, -- 8.0 PH - Trinket
-158459, -- 8.0 PH - Trinket
-159977, -- Vindictive Golem Core
-155565, -- Trunksy
-159077, -- Ticker's Spare Catalyst
-158513, -- Shimmering Rune
-158572, -- Shimmering Rune
-153410, -- Shimmering Rune
-154981, -- Shimmering Rune
-155575, -- Sanguine Lich's Fetish
-159979, -- Rorgog's Antenna
-161289, -- Rikal's Shark Teeth
-158680, -- Rikal's Ritual Beads
-158219, -- Petula's Locket
-158515, -- Oceanographer's Weather Log
-153412, -- Oceanographer's Weather Log
-155567, -- Mr. Munchykins
-155564, -- Mercy's Psalter
-155569, -- Mayor Striggs
-158558, -- Luminous Honey Jar
-158681, -- Lightning Tether
-159976, -- Liberated Idol of Binding
-155580, -- Kel'vax's Splintered Phylactery
-159978, -- Junji's Egg Timer
-159074, -- Jarkadiax's Other Eye
-159763, -- Idol of Vol'jamba
-159764, -- Enraged Diemetradon Fin
-159765, -- Empowered Shark's Tooth
-161811, -- Dread Combatant's Medallion
-161812, -- Dread Combatant's Emblem
-162897, -- Dread Aspirant's Medallion
-162898, -- Dread Aspirant's Emblem
-161182, -- Cracked Crawg Shackles
-158220, -- Cooper's Horseshoe
-159075, -- Bloodhex Talisman
-158574, -- Bijou of the Golden City
-154983, -- Bijou of the Golden City
-158224, -- Vial of Storms
-159610, -- Vessel of Skittering Shadows
-160263, -- Snowpelt Mangler
-158556, -- Siren's Tongue
-159624, -- Rotcrusted Voodoo Doll
-158320, -- Revitalizing Voodoo Totem
-161119, -- Ravasaur Skull Bijou
-158162, -- Pearl Diver's Compass
-158216, -- Living Oil Cannister
-159631, -- Lady Waycrest's Music Box
-161125, -- Kaja-fied Banana
-161113, -- Incessantly Ticking Clock
-159615, -- Ignition Mage's Fuse
-159622, -- Hadal's Nautilus
-155568, -- Galewind Chimes
-158163, -- First Mate's Spyglass
-158368, -- Fangs of Intertwined Essence
-158154, -- Emblem of Zandalar
-158555, -- Doom Shroom
-158218, -- Dadalea's Wing
-161115, -- Cursed Captain's Charm
-159620, -- Conch of Dark Whispers
-161117, -- Berserker's Juju
-161414, -- Wing Bone of the Budding Tempest
-160651, -- Vigilant's Bloodshaper
-157766, -- Vial of Nightmare Fog
-161374, -- Tear of the Void
-161411, -- T'zane's Barkspines
-161472, -- Lion's Grace
-163937, -- Leyshock's Grand Compilation
-160649, -- Inoculating Extract
-161674, -- Dread Gladiator's Medallion
-161675, -- Dread Gladiator's Emblem
-161461, -- Doom's Hatred
-159127, -- Darkmoon Deck: Tides
-159126, -- Darkmoon Deck: Squalls
-161377, -- Azurethos' Singed Plumage
--- Multiple Classes
-152637, -- Siren's Alchemist Stone
-159078, -- Potency Manipulator
-158225, -- Over-Engineered Flash Bulb
-158679, -- Maokka's Carving
-161222, -- Latency Manipulator
-158557, -- Heartsbane Charm
-152634, -- Endless Tincture of Renewed Combat
-161813, -- Dread Combatant's Insignia
-161903, -- Dread Combatant's Badge
-162899, -- Dread Aspirant's Insignia
-162966, -- Dread Aspirant's Badge
-161223, -- Agency Manipulator
-160262, -- "Relic of the Makers"
-158215, -- Whirlwing's Plumage
-159625, -- Vial of Animated Blood
-152632, -- Surging Alchemist Stone
-160753, -- Sanguinating Totem
-158164, -- Plunderbeard's Flask
-158153, -- Gilded Loa Figurine
-160833, -- Fetish of the Tormented Mind
-152636, -- Endless Tincture of Fractional Power
-158155, -- Dinobone Charm
-163703, -- Crawg Gnawed Femur
-159630, -- Balefire Branch
-159612, -- Azerokk's Resonating Heart
-160654, -- Vanquished Tendril of G'huun
-160656, -- Twitching Tentacle of Xalzaix
-161417, -- Sandscoured Idol
-161376, -- Prism of Dark Intensity
-161378, -- Plume of the Seaborne Avian
-161381, -- Permafrost-Encrusted Heart
-161473, -- Lion's Guile
-161419, -- Kraulok's Claw
-161413, -- Knot of Spiritual Fury
-157763, -- Engine of Eradication
-161380, -- Drust-Runed Icicle
-161676, -- Dread Gladiator's Insignia
-161902, -- Dread Gladiator's Badge
-161462, -- Doom's Wake
-152633, -- Alchemist Tincture - Caster(NEEDS NAME)
-152635, -- Alchemist Tincture - Caster(NEEDS NAME)
+	-- 7.3 trinkets
+	152288, -- 7.3 Raid - Antorus - Boss 11 - Trinket Ranged WS
+	151959, -- 7.3 Raid - Antorus - Boss 11 - Trinket Healer WS
+	152702, -- 7.3 Raid - Antorus - Boss 11 - Trinket All WS
+	151970, -- Vitality Resonator
+	151969, -- Terminus Signaling Beacon
+	151958, -- Tarratus Keystone
+	151971, -- Sheath of Asara
+	151962, -- Prototype Personnel Decimator
+	151957, -- Ishkar's Felshield Emitter
+	152289, -- Highfather's Machination
+	151956, -- Garothi Feedback Conduit
+	151960, -- Carafe of Searing Light
+	151955, -- Acrid Catalyst Injector
+	152782, -- Venerable Triad Statuette
+	152781, -- Unblemished Sigil of Argus
+	152783, -- Mac'aree Focusing Amethyst
+	153172, -- Doomed Exarch's Memento
+	
+	-- 7.2.5 trinkets
+	150523,	-- Memento of Tyrande
+	150388,	-- Hibernation Crystal
+
+	-- 7.2 trinkets
+	147276, -- Spellbinder's Seal
+	144480, -- Dreadstone of Endless Shadows
+	147019, -- Tome of Unraveling Sanity
+	147007, -- The Deceiver's Grand Design
+	147016, -- Terror From Below
+	147017, -- Tarnished Sentinel Medallion
+	147018, -- Spectral Thurible
+	147004, -- Sea Star of the Depthmother
+	147002, -- Charm of the Rising Tide
+	147005, -- Chalice of Moonlight
+	147003, -- Barbaric Mindslaver
+	147006, -- Archive of Faith
+	
+	-- 7.1.5 and previously missed 7.1 trinkets
+	142166, -- Ethereal Urn
+	142507, -- Brinewater Slime in a Bottle
+
+	-- 7.1 trinkets
+	140031, -- Mana Spark
+	142160, -- Mrrgria's Favor
+	142162, -- Fluctuating Energy
+	142158, -- Faith's Crucible
+	142165, -- Deteriorated Construct Core
+	142157, -- Aran's Relaxing Ruby
+	
+	137419, -- Chrono Shard
+	133642, -- Horn of Valor
+	141482, -- Unstable Arcanocrystal
+	141536, -- Padawsen's Unlucky Charm
+	132970, -- Runas' Nearly Depleted Ley Crystal
+	136038, -- Legion Season 1Vindictive Combatant's Insignia of Dominance
+	135925, -- Legion Season 1Vindictive Combatant's Insignia of Dominance
+	137452, -- Thrumming Gossamer
+	132895, -- The Watcher's Divine Inspiration
+	137367, -- Stormsinger Fulmination Charge
+	137398, -- Portable Manacracker
+	121810, -- Pocket Void Portal
+	137433, -- Obelisk of the Void
+	137306, -- Oakheart's Gnarled Root
+	133766, -- Nether Anti-Toxin
+	137349, -- Naraxas' Spiked Tongue
+	133645, -- Naglfar Fare
+	133646, -- Mote of Sanctification
+	137541, -- Moonlit Prism
+	137462, -- Jewel of Insatiable Desire
+	137485, -- Infernal Writ
+	137484, -- Flask of the Solemn Night
+	137329, -- Figurehead of the Naglfar
+	133641, -- Eye of Skovald
+	137446, -- Elementium Bomb Squirrel Generator
+	140030, -- Devilsaur Shock-Baton
+	137301, -- Corrupted Starlight
+	137540, -- Concave Reflecting Lens
+	136716, -- Caged Horror
+	137378, -- Bottled Hurricane
+	121652, -- Ancient Leaf
+	136714, -- Amalgam's Seventh Spine
+	139326, -- Wriggling Sinew
+	135812, -- Legion Season 1Vindictive Gladiator's Insignia of Dominance
+	136264, -- Legion Season 1 EliteVindictive Gladiator's Insignia of Dominance
+	135699, -- Legion Season 1Vindictive Gladiator's Insignia of Dominance
+	136151, -- Legion Season 1 EliteVindictive Gladiator's Insignia of Dominance
+	138222, -- Vial of Nightmare Fog
+	138224, -- Unstable Horrorslime
+	139323, -- Twisting Wind
+	139321, -- Swarming Plaguehive
+	140793, -- Perfectly Preserved Cake
+	139333, -- Horn of Cenarius
+	139330, -- Heightened Senses
+	140803, -- Etraeus' Celestial Map
+	140805, -- Ephemeral Paradox
+	139322, -- Cocoon of Enforced Solitude
+	139336, -- Bough of Corruption
+	140795 -- Aluriel's Mirror
 }
 
 PLH_TRINKET_TANK = {
-	-- 8.0 trinkets
-158157, -- 8.0 PH Trinket
-158158, -- 8.0 PH Trinket
-158166, -- 8.0 PH Trinket
-158167, -- 8.0 PH Trinket
-159766, -- 8.0 PH Trinket
-159935, -- 8.0 PH Trinket
-155566, -- 8.0 PH - Unused - Trinket
-158214, -- 8.0 PH - Unused - Trinket
-158217, -- 8.0 PH - Unused - Trinket
-158221, -- 8.0 PH - Unused - Trinket
-158559, -- 8.0 PH - Unused - Trinket
-158560, -- 8.0 PH - Unused - Trinket
-160264, -- 8.0 PH - Unused - Trinket
-158448, -- 8.0 PH - Trinket
-158449, -- 8.0 PH - Trinket
-158450, -- 8.0 PH - Trinket
-158451, -- 8.0 PH - Trinket
-158452, -- 8.0 PH - Trinket
-158453, -- 8.0 PH - Trinket
-158454, -- 8.0 PH - Trinket
-158455, -- 8.0 PH - Trinket
-157813, -- 8.0 PH - Trinket
-159613, -- 8.0 - PH Dungeon - AGI Trinket
-155576, -- Zardax's Cracked Phylactery
-159977, -- Vindictive Golem Core
-155565, -- Trunksy
-159077, -- Ticker's Spare Catalyst
-158511, -- Seabeast Tusk
-158570, -- Seabeast Tusk
-153408, -- Seabeast Tusk
-154979, -- Seabeast Tusk
-159979, -- Rorgog's Antenna
-161289, -- Rikal's Shark Teeth
-158680, -- Rikal's Ritual Beads
-158516, -- Privateer's Spyglass
-153413, -- Privateer's Spyglass
-158219, -- Petula's Locket
-158514, -- Petrified Basilisk Scale
-158573, -- Petrified Basilisk Scale
-153411, -- Petrified Basilisk Scale
-154982, -- Petrified Basilisk Scale
-155567, -- Mr. Munchykins
-155564, -- Mercy's Psalter
-155569, -- Mayor Striggs
-158558, -- Luminous Honey Jar
-158512, -- Lucky Braid
-158571, -- Lucky Braid
-153409, -- Lucky Braid
-154980, -- Lucky Braid
-158681, -- Lightning Tether
-159976, -- Liberated Idol of Binding
-159978, -- Junji's Egg Timer
-159074, -- Jarkadiax's Other Eye
-159763, -- Idol of Vol'jamba
-159764, -- Enraged Diemetradon Fin
-158575, -- Enchanted Devilsaur Claw
-154984, -- Enchanted Devilsaur Claw
-159765, -- Empowered Shark's Tooth
-161811, -- Dread Combatant's Medallion
-161812, -- Dread Combatant's Emblem
-162897, -- Dread Aspirant's Medallion
-162898, -- Dread Aspirant's Emblem
-155578, -- Death Defier's Fetish
-155579, -- Crimson Lich Bijou
-161182, -- Cracked Crawg Shackles
-158220, -- Cooper's Horseshoe
-155577, -- Bone Lich Bijou
-159075, -- Bloodhex Talisman
-158224, -- Vial of Storms
-159629, -- Token of Ironside Blessing
-159971, -- Token of Ironside Blessing
-158374, -- Tiny Electromental in a Jar
-160263, -- Snowpelt Mangler
-158556, -- Siren's Tongue
-158712, -- Rezan's Gleaming Eye
-159611, -- Razdunk's Big Red Button
-161119, -- Ravasaur Skull Bijou
-158162, -- Pearl Diver's Compass
-158319, -- My'das Talisman
-158367, -- Merektha's Fang
-159618, -- Mchimba's Ritual Bandages
-159617, -- Lustrous Golden Plumage
-158216, -- Living Oil Cannister
-159626, -- Lingering Sporepods
-159628, -- Kul Tiran Cannonball Runner
-161125, -- Kaja-fied Banana
-159627, -- Jes' Howler
-161113, -- Incessantly Ticking Clock
-155881, -- Harlan's Loaded Dice
-159616, -- Gore-Crusted Butcher's Block
-155568, -- Galewind Chimes
-159614, -- Galecaller's Boon
-158163, -- First Mate's Spyglass
-158154, -- Emblem of Zandalar
-158555, -- Doom Shroom
-159623, -- Dead-Eye Spyglass
-158218, -- Dadalea's Wing
-161115, -- Cursed Captain's Charm
-159619, -- Briny Barnacle
-161117, -- Berserker's Juju
-160653, -- Xalzaix's Veiled Eye
-161375, -- Void Portal Stone
-160655, -- Syringe of Bloodborne Infirmity
-161382, -- Sublimating Iceshard
-161412, -- Spiritbound Voodoo Burl
-161415, -- Razorcrest of the Enraged Matriarch
-161474, -- Lion's Strength
-163935, -- Landoi's Scrutiny
-161416, -- Hurricane Heart
-161379, -- Galecaller's Beak
-160648, -- Frenetic Corpuscle
-161418, -- Dunewalker's Survival Kit
-161674, -- Dread Gladiator's Medallion
-161675, -- Dread Gladiator's Emblem
-157765, -- Draught of Souls
-161463, -- Doom's Fury
-160650, -- Disc of Systematic Regression
-159125, -- Darkmoon Deck: Fathoms
-159128, -- Darkmoon Deck: Blockades
-160652, -- Construct Overcharger
-157764, -- Claw of the Crystalline Scorpid
-163936, -- 'Bygone Bee' Almanac
--- Multiple Classes
-152637, -- Siren's Alchemist Stone
-159078, -- Potency Manipulator
-158225, -- Over-Engineered Flash Bulb
-158679, -- Maokka's Carving
-161222, -- Latency Manipulator
-158557, -- Heartsbane Charm
-152634, -- Endless Tincture of Renewed Combat
-161813, -- Dread Combatant's Insignia
-161903, -- Dread Combatant's Badge
-162899, -- Dread Aspirant's Insignia
-162966, -- Dread Aspirant's Badge
-161223, -- Agency Manipulator
-160262, -- "Relic of the Makers"
-158215, -- Whirlwing's Plumage
-159625, -- Vial of Animated Blood
-152632, -- Surging Alchemist Stone
-160753, -- Sanguinating Totem
-158164, -- Plunderbeard's Flask
-158153, -- Gilded Loa Figurine
-160833, -- Fetish of the Tormented Mind
-152636, -- Endless Tincture of Fractional Power
-158155, -- Dinobone Charm
-163703, -- Crawg Gnawed Femur
-159630, -- Balefire Branch
-159612, -- Azerokk's Resonating Heart
-160654, -- Vanquished Tendril of G'huun
-160656, -- Twitching Tentacle of Xalzaix
-161417, -- Sandscoured Idol
-161376, -- Prism of Dark Intensity
-161378, -- Plume of the Seaborne Avian
-161381, -- Permafrost-Encrusted Heart
-161473, -- Lion's Guile
-161419, -- Kraulok's Claw
-161413, -- Knot of Spiritual Fury
-157763, -- Engine of Eradication
-161380, -- Drust-Runed Icicle
-161676, -- Dread Gladiator's Insignia
-161902, -- Dread Gladiator's Badge
-161462, -- Doom's Wake
-152633, -- Alchemist Tincture - Caster(NEEDS NAME)
-152635, -- Alchemist Tincture - Caster(NEEDS NAME)
+	-- 7.3 trinkets
+	152287, -- 7.3 Raid - Antorus - Boss 11 - Trinket Tank WS
+	151976, -- Riftworld Codex
+	151978, -- Foe-Breaker Titanguard
+	152645, -- Eye of
+	151974, -- Eye of
+	151977, -- Diima's Glacial Aegis
+	151975, -- Apocalypse Drive
+	152782, -- Venerable Triad Statuette
+	152781, -- Unblemished Sigil of Argus
+	152783, -- Mac'aree Focusing Amethyst
+	153172, -- Doomed Exarch's Memento
+	
+	-- 7.2.5 trinkets
+	150526,	-- Shadowmoon Insignia
+	150527,	-- Madness of the Betrayer	
+	
+	-- 7.2 trinkets
+	147278, -- Stalwart Crest
+	147275, -- Beguiler's Talisman
+	144477, -- Splinters of Agronax
+	144482, -- Fel-Oiled Infernal Machine
+	147026, -- Shifting Cosmic Sliver
+	147024, -- Reliquary of the Damned
+	147025, -- Recompiled Guardian Module
+	147023, -- Leviathan's Hunger
+	147022, -- Feverish Carapace
+	
+	-- 7.1.5 and previously missed 7.1 trinkets
+	142506, -- Eye of Guarm
+	142166, -- Ethereal Urn
+
+	-- 7.1 trinkets
+	140027, -- Ley Spark
+	140035, -- Fluctuating Arc Capacitor
+	142169, -- Raven Eidolon
+	142168, -- Majordomo's Dinner Bell
+	142161, -- Inescapable Dread
+	
+	137419, -- Chrono Shard
+	133642, -- Horn of Valor
+	141482, -- Unstable Arcanocrystal
+	137315, -- Writhing Heart of Darkness
+	136041, -- Legion Season 1Vindictive Combatant's Insignia of Victory
+	135928, -- Legion Season 1Vindictive Combatant's Insignia of Victory
+	136032, -- Legion Season 1Vindictive Combatant's Insignia of Conquest
+	135919, -- Legion Season 1Vindictive Combatant's Insignia of Conquest
+	140026, -- The Devilsaur's Bite
+	129260, -- Tenacity of Cursed Blood
+	137344, -- Talisman of the Cragshaper
+	131803, -- Spine of Barax
+	137440, -- Shivermaw's Jawbone
+	137338, -- Shard of Rokmora
+	137362, -- Parjesh's Medallion
+	137538, -- Orb of Torment
+	121806, -- Mountain Rage Shaker
+	121570, -- Might of the Forsaken
+	128958, -- Lekos' LeashDemon Hunter
+	137430, -- Impenetrable Nerubian Husk
+	140034, -- Impact Tremor
+	133647, -- Gift of Radiance
+	129044, -- Frothing Helhound's Fury
+	136978, -- Ember of Nullification
+	137400, -- Coagulated Nightwell Residue
+	135702, -- Legion Season 1Vindictive Gladiator's Insignia of Victory
+	136267, -- Legion Season 1 EliteVindictive Gladiator's Insignia of Victory
+	135815, -- Legion Season 1Vindictive Gladiator's Insignia of Victory
+	136154, -- Legion Season 1 EliteVindictive Gladiator's Insignia of Victory
+	135693, -- Legion Season 1Vindictive Gladiator's Insignia of Conquest
+	136258, -- Legion Season 1 EliteVindictive Gladiator's Insignia of Conquest
+	135806, -- Legion Season 1Vindictive Gladiator's Insignia of Conquest
+	136145, -- Legion Season 1 EliteVindictive Gladiator's Insignia of Conquest
+	139327, -- Unbridled Fury
+	140791, -- Royal Dagger Haft
+	138225, -- Phantasmal Echo
+	140807, -- Infernal Contract
+	139335, -- Grotesque Statuette
+	139324, -- Goblet of Nightmarish Ichor
+	140797, -- Fang of Tichcondrius
+	139630, -- Etching of SargerasDemon Hunter
+	140789 -- Animated Exoskeleton
 }
